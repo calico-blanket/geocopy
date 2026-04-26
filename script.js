@@ -6,10 +6,10 @@ const map = L.map('map', {
     attributionControl: true
 });
 
-// Add modern, readable tiles (using CartoDB Voyager)
-L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+// Add localized, readable tiles (using OpenStreetMap Japan for better Japanese labels)
+L.tileLayer('https://tile.openstreetmap.jp/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 // Add marker
